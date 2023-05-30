@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+.rotate {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#ecebeb, hsla(0, 3%, 92%, 0));
+    border-radius: 50%;
+    position: relative;
+    animation: mymove 2s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotate::after{
+    content: "";
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+@keyframes mymove {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
